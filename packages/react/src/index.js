@@ -1,5 +1,8 @@
 import React from 'react'
 export { default as IDSButton } from './ids/button'
+export { default as IDSProgressBar } from './ids/progress-bar'
+export { default as IDSTextField } from './ids/text-field'
+export { default as StepFlow } from './ids/step-flow'
 // HEADERS
 export { default as HeaderBasic } from './headers/basic'
 export { default as HeaderLogo } from './headers/logo'

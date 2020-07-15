@@ -1,10 +1,12 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import TextField from '@ids/text-field'
+import loadable from '@loadable/component'
 import { ControlType, applyPropertyControls } from 'property-controls'
 
+const TextField = loadable(() => import('@ids/text-field'))
+
 const IDSTextField = ({ theme, label, placeholder }) => {
-  return <TextField theme={theme} label={label} size={placeholder} />
+  return <TextField theme={theme} label={label} placeholder={placeholder} />
 }
 
 applyPropertyControls(IDSTextField, {

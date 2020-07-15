@@ -1,8 +1,9 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-// import { Link } from '@theme-ui/components'
-import Button from '@ids/button'
+import loadable from '@loadable/component'
 import { ControlType, applyPropertyControls } from 'property-controls'
+
+const Button = loadable(() => import('@ids/button'))
 
 const IDSButton = ({ children, theme, buttonType, size }) => {
   return (
