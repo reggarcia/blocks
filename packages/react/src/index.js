@@ -1,5 +1,5 @@
 import React from 'react'
-
+export { default as IDSButton } from './ids/button'
 // HEADERS
 export { default as HeaderBasic } from './headers/basic'
 export { default as HeaderLogo } from './headers/logo'
